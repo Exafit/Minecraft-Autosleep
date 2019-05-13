@@ -19,5 +19,6 @@ scoreboard players reset * as_zeit
 scoreboard players reset * as_timer
 
 scoreboard players set #teiler as_notw_spieler 2
+scoreboard players set #test as_zeit 0
 
 
