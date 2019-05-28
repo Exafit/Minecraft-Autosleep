@@ -41,7 +41,10 @@ scoreboard players operation #spieler as_notw_spieler /= #teiler as_notw_spieler
 execute if score #spieler as_anz_schlaf = #spieler as_notw_spieler if score #spieler as_einschlafen = #spieler as_anz_schlaf run function autosleep:tag
 
 
-
+#Lässt schlafen durch trigger befehl simmulieren
+execute as @a if score #tageszeit as_zeit matches 13000..23000 if score @s as_sleep matches 1.. run function autosleep:tag
+execute as @a if score @s as_sleep matches 1.. run scoreboard players enable @s as_sleep
+execute as @a if score @s as_sleep matches 1.. run scoreboard players set @s as_sleep 0
 
 
 
